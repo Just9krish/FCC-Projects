@@ -1,0 +1,107 @@
+* {
+    padding: 0%;
+    margin: 0;
+    /* font-size: 10px; */
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #477ca7;
+}
+
+a:visited {
+    color: #74638f;
+}
+
+.main {
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
+}
+
+
+
+@media (min-width: 700px) {
+    .main {
+        margin: 30px 10px;
+    }
+}
+
+.tribute-title {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+@media (min-width : 700px) {
+    .tribute-title {
+        font-size: 4rem;
+    }
+}
+
+.tribute-subtitle {
+    margin-bottom: 50px;
+}
+
+.img-div {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.img-caption {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 700px) {
+    .img-caption {
+        margin: 15px 0 10px 0;
+    }
+}
+
+.headline {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.tribute-list {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 700px) {
+    .tribute-list {
+        max-width: 550px;
+    }
+}
+
+.tribute-list__item {
+    margin: 15px 15px;
+}
+
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
