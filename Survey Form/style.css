@@ -55,6 +55,13 @@ body::before {
     background-repeat: no-repeat;
 }
 
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5em 0.625em;
+    border-radius: 0.25em;
+}
+
+
 label {
     display: flex;
     align-items: center;
@@ -111,12 +118,6 @@ button {
 
 /* Form */
 
-form {
-    background: var(--color-darkblue-alpha);
-    padding: 2.5em 0.625em;
-    border-radius: 0.25em;
-}
-
 .form-group {
     margin: 0 auto;
     margin-bottom: 0.65em;
@@ -169,4 +170,24 @@ form {
 
 .submit-button:hover {
     opacity: 0.7;
+}
+
+
+/* ----------------- Media quries------------------ */
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 756px) {
+    .container {
+        max-width: 720px;
+    }
+
+    form {
+        padding: 2.5em;
+    }
 }
