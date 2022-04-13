@@ -1,13 +1,4 @@
-/* Colors */
-
-:root {
-    --lenear-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
-
-    --very-light-grayish-blue: hsl(240, 78%, 98%);
-    --light-grayish-blue: hsl(234, 14%, 74%);
-    --grayish-blue: hsl: (233, 13%, 49%);
-    --dark-grayish-blue: hsl(232, 12%, 33%)
-}
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
 
 *,
 ::before,
@@ -29,6 +20,7 @@ body {
 
 body {
     line-height: 1.5;
+    font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -58,6 +50,32 @@ img {
 a {
     text-decoration: none;
     --webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 70rem;
+    position: relative;
+}
+
+.cta {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.4em 1.8em;
+    letter-spacing: 3px;
+    margin: 32px auto 60px 0;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.25s;
 }
 
 .header {
@@ -120,7 +138,7 @@ a {
     margin: 0 auto;
 }
 
-.hamburger::before, 
+.hamburger::before,
 .hamburger::after {
     content: "";
     width: 100%;
@@ -132,4 +150,49 @@ a {
 
 .hamburger::after {
     transform: translateY(3px);
+}
+
+
+
+/* Hero  */
+
+.main-img {
+    background-color: #444;
+    background-image: url(./img/robotgradientintro2.jpg);
+    background-size: cover;
+    background-position: 65.39% 50%;
+    min-height: 100vh;
+    color: white;
+
+}
+
+.hero-img {
+    margin-top: 40px;
+    margin-left: -40px;
+    width: 178px;
+    height: 178px;
+
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.hero__heading {
+    font-size: 3.43rem;
+    margin-top: -120px;
+    font-weight: initial;
+}
+
+.hero__heading span {
+    font-weight: bold;
+}
+
+.hero__discription {
+    margin-top: 19px;
+    margin-right: 86px;
+    font-size: 1.25rem;
+    width: auto;
 }
