@@ -79,6 +79,7 @@ a {
 }
 
 .header {
+    padding: 1em 0;
     text-align: center;
 }
 
@@ -97,6 +98,16 @@ a {
 
 .nav__item {
     margin: 1.5em 0;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.nav__link:hover, 
+.nav__link:focus {
+    color: #00c9a7;
+    transition: all 0.25 ease;
 }
 
 .nav-toggle {
@@ -152,6 +163,55 @@ a {
     transform: translateY(3px);
 }
 
+@media (min-width: 1040px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        height: auto;
+        position: relative;
+        justify-content: flex-end;
+        font-size: 1.125rem;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav__item {
+        margin: 0 0 0 1.5em;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav__item::before {
+        transition: 300ms;
+        height: 4px;
+        content: "";
+        position: absolute;
+        background-color: #00c9a7;
+    }
+
+    .nav__item-ltr::before {
+        width: 0%;
+        bottom: -5px;
+    }
+
+    .nav__item-ltr:hover::before {
+        width: 100%;
+    }
+
+}
 
 
 /* Hero  */
@@ -161,9 +221,8 @@ a {
     background-image: url(./img/robotgradientintro2.jpg);
     background-size: cover;
     background-position: 65.39% 50%;
-    min-height: 100vh;
     color: white;
-
+    min-height: 742px;
 }
 
 .hero-img {
@@ -195,4 +254,14 @@ a {
     margin-right: 86px;
     font-size: 1.25rem;
     width: auto;
+}
+
+@media (min-width : 860px) {
+    .hero__discription {
+        max-width: 700px;
+    }
+
+    .main-img {
+        height: 100vh;
+    }
 }
