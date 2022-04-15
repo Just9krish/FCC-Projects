@@ -347,6 +347,11 @@ a {
     margin: 30px 0 22px 0;
 }
 
+@media (min-width: 1040px) {
+    .feature__img {
+        margin: -112px 0 0 auto;
+    }
+}
 
 /* Vedio Section  */
 
@@ -523,4 +528,37 @@ input[type=submit]:hover {
 .footer {
     color: #ffffff;
     background-color: #ff4892;
+    background-image: none;
+    position: relative;
+    padding: 30px 0;
+}
+
+.footer__container {
+    width: 283.3334px;
+    min-height: 158px;
+    height: auto;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.footer__text {
+    margin: 0 6px;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.footer__socials {
+    width: 122px;
+    min-width: 94px;
+    white-space: nowrap;
+    margin: 27px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
