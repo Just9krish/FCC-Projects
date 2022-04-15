@@ -123,7 +123,7 @@ a {
     height: 3em;
     border-radius: 50%;
     border: 0;
-    background-color: #d65db1;
+    background-color: #834496;
     color: #fff;
     padding: 0;
     cursor: pointer;
@@ -222,7 +222,7 @@ a {
 
 .main-img {
     background-color: #444;
-    background-image: url(./img/robotgradientintro2.jpg);
+    background-image: url(https://i.postimg.cc/RVTWf82c/robotgradientintro2.jpg);
     background-size: cover;
     background-position: 65.39% 50%;
     color: white;
@@ -362,17 +362,18 @@ a {
     .height--adjust {
         margin-top: -296px;
     }
-
-    .feature__container {}
-
 }
-
 
 /* Vedio Section  */
 
 .video__section {
-    background: url(./img/bggradient4.jpg);
-    background-position: 80% 80%;
+    background: url(https://i.postimg.cc/MTDGRfFz/bggradient4.jpg);
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     padding: 3em 0;
 }
 
@@ -412,6 +413,11 @@ a {
     text-align: right;
     position: relative;
     color: #fff;
+}
+
+.video {
+    margin: 0 auto;
+    max-width: 550px;
 }
 
 @media (min-width: 1040px) {
@@ -524,7 +530,7 @@ a {
 
 
 .contact__form {
-    background: url(./img/bggradient3.jpg);
+    background: url(https://i.postimg.cc/yYw7DT8F/bggradient3.jpg);
     background-size: cover;
     background-position: 80% 50%;
     background-repeat: no-repeat;
