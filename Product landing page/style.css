@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *,
 ::before,
@@ -403,11 +403,13 @@ a {
     margin: 20px 0 0;
     color: #fff !important;
     word-wrap: break-word;
+    font-style: italic;
 }
 
 .quote__ref {
     font-size: 1.25rem;
     font-weight: 700;
+    font-style: italic;
     letter-spacing: 1px;
     margin: 20px 0 35px;
     text-align: right;
